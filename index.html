@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>Home</title>
+
+
+</head>
+<style>
+* {
+  box-sizing: border-box;
+}
+  body {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 20px;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 50px;
+}
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(255, 157, 0);
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.logo{
+    margin-left: 250px;
+}
+.column1 {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+.column2 {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+.column3 {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+.column4 {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+div.desc {
+  padding: 15px;
+  text-align: left;
+  padding-left: 100px;
+  font-size: bold;
+}
+div.desc1, .desc3 {
+  text-align: right;
+ padding-right: 100px;
+  margin-top: 220px;
+  font-size: bold;
+
+}
+.content1{
+  
+    width: 100%;
+}
+
+.sekop1 {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+.sekop2 {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+.content2{
+  
+  width: 100%;
+}
+.desccontent2{
+  color: white;
+  padding: 0;
+  font-size: large;
+  padding-top: 100px;
+}
+.linkproduct1 a:hover{
+  background-color: yellow;
+}
+.footer {
+  width: 100%;
+  position: relative;
+  height: auto;
+  background-color: #000000;
+}
+.footer .col {
+  width: 190px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px 20px 20px 20px;
+  margin-top: 50px;
+}
+.footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color: rgba(255,255,255,0.2);
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.250em;
+  margin-top: 50px;
+}
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer .col ul li {
+  color: #999999;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+.social ul li {
+  display: inline-block;
+  padding-right: 5px !important;
+}
+
+.footer .col ul li:hover {
+  color: #ffffff;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+.clearfix {
+  clear: both;
+}
+@media only screen and (min-width: 1280px) {
+  .contain {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1139px) {
+  .contain .social {
+    width: 1000px;
+    display: block;
+  }
+  .social h1 {
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .footer .col {
+    width: 33%;
+  }
+  .footer .col h1 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 500px) {
+    .footer .col {
+      width: 50%;
+    }
+    .footer .col h1 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+}
+.followus1 {
+  float: right;
+  width: 33.33%;
+  padding: 15px;
+}
+.followus2 {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+.followus3 {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+div.sosialmedia {
+  width:  450px;
+  height: 300px;
+  margin: 0;
+  float: left
+}
+
+
+div.sosialmedia img {
+  width: 250px;
+  margin-left: 150px;
+  margin-top: 50px;
+}
+.content3{
+  width: 100%;
+}
+.desproductinovation2{
+  color: white;
+  padding: 0;
+  font-size: large;
+  padding-top: 400px;
+}
+
+</style>
+<body>
+    
+<nav>
+    <div class="navbar">
+            <ul class="brand">
+                <li class="logo"><img src="https://roughneck-tools.com/static/images/logo_white.svg" width="273%" alt="">HOME</li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">PRODUCTS</a>
+                    <div class="dropdown-content">
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                  </li>
+                <li><a href="">INOVATION</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">ROUGH GUIDES</a>
+                    <div class="dropdown-content">
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#" class="dropbtn">SUPPORT</a>
+                    <div class="dropdown-content">
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#" class="dropbtn">ABOUT US</a>
+                    <div class="dropdown-content">
+                      <a href="#">About Us</a>
+                      <a href="#">News</a>
+                    </div>
+                  </li>
+                  <li><a href="#">BIODATA</a></li>
+                    <div class="dropdown-content">
+                        <div class="foto">
+                            <a href="#" img src="IMG20220402120934.jpg" alt="" width="200" height="auto">
+                        </div>
+                    </div>
+                    </li>
+                    <li><a href="#">CONTUCT US</a></li>
+                    <div class="dropdown-content">
+                        <a href="#">Nama Lengkap</a>
+                    </div>
+                    </li>
+                    </div>
+                    
+                  </li>
+                  <li><i class="fa fa-search"></i></li>
+              </ul>
+            </nav>
+
+            <div class="content1" style="background-image: url(https://storage.googleapis.com/roughneck-tools/images/12345-grey-grunge.2e16d0ba.fill-1920x1080.jpg?Expires=1665663324&GoogleAccessId=roughneck-tools%40olympia-tools.iam.gserviceaccount.com&Signature=HvCUsAmZrdizOrscT5MbSzD8WupZJEYMNNJ%2B9DCiLdXfDqlEuOuwYxVEpG2x9N9ckpP5gk3Yrc2GO5fpKEPNaxBIPft4l8ZpTbUtIw2v%2B6pl9SNDmdh7OxAAxEwhVWaFfQlc6%2BC6gASGF0ELqea5tjik32fPVNOxzTUODeEhFRGvsS%2BU3S9ea1kVS6ESZ72mZlst87rNB5M4IcgBAJfoKnB95ahkdJBETNgssb81JOfIFApbxjncyBkgGzxHr9D063yxhLFI5Unf2wfHqd99oRlYRwmBQnivcga5fNU5PTJ3Mp2ID%2FwQiNMbiU9u7QC499mkGOSU6wjg%2Fqi%2B1uNhkg%3D%3D); background-size: 100%; height: 650px;">
+                <h1 style="text-align: center;">PRODUCT CATEHORIES</h1>
+           
+
+            <div class="row">
+                <div class="column1">
+                  <img src="Striking-and-demolition-tools.height-1080.jpg" width="500px" height="200px" style="float: right;"  alt="">
+                  <div class="desc1">STRIKING AND DEMOLITION TOOLS</div>
+                </div>
+                
+                <div class="column2">
+                  <img src="landscaping-contractor-mobile.2e16d0ba.fill-767x968.png" width="500px" height="200px"  alt="">
+                  <div class="desc">LANSDSCAPE AND CONTRACTOR TOOLS</div>
+                </div>
+                </div>
+              <div class="row">
+                <div class="column3">
+                  <img src="building-tools-mobile.2e16d0ba.fill-767x968.png" width="500px" height="200px" style="float: right;"  alt="">
+                  <div class="desc3">BUILDING TOOLS</div>
+                </div>
+                
+                <!-- <div class="column4">
+                  <img src="https://storage.googleapis.com/roughneck-tools/images/Woodworking-and-cutting.height-1080.jpg?Expires=1665663324&GoogleAccessId=roughneck-tools%40olympia-tools.iam.gserviceaccount.com&Signature=F1lqmOfxKv9oznzsWCplyFqxeMg9BacrPq59TkqwNIcrinJnfhE3RUR%2F7rWR10CJgXG8aRZ77VnEcvulvIh0WqmID6cZEHv3%2FBfcpDLEGoe5J2jf8B0t0z3DJ8KzPl12iAg3hyT41NvUPwNsOFNrcGd%2FDdQUaqkJpF9IYFhwOByoy5IaFKaRSqvplUxjF8tweduZNHctLQKKq2133imfFxIdTrLkiNj3f4mAm1%2BjPeZEiscyhN1YYVT%2FDuIapiG9WZPX05VkqcMySTJXizWjD4cn3A7Yiu67FwYLLjPzw0bQ5s1JNZkXyjAYb1Z90AXKuZKqnzO98FgIPQLX2v8wRA%3D%3D" width="500px" height="200px" style="float: left;" alt="">
+                  <div class="desc">Lorem ipsum</div>
+                </div> -->
+                <div class="column4">
+                    <a target="_blank" href="img_forest.jpg">
+                      <img src="Woodworking-and-cutting.height-1080.jpg" alt="Forest"width="500px" height="200px" >
+                    </a>
+                    <div class="desc">WOODWORKING AND CUTTING TOOLS</div>
+                  </div>
+            </div>
+            </div>
+            <div class="content2" style="background-image: url(Roughneck_StrikeDemo_Concrete_RG.2e16d0ba.fill-1920x1080.jpg); background-size: 100%; height: 1100px;">
+               
+                    <div class="row">
+                        <div class="sekop1">
+                          <img src="roughneck-block-buster.2e16d0ba.fill-650x1080.png"width="600px" style="float: right;"   alt="">
+                          
+                        </div>
+                        <div class="sekop2">
+                          <img src="https://roughneck-tools.com/static/images/youtube-white.svg" width="150px"  style="margin-top: 200px;"  alt="">
+                          <div class="desccontent2">
+                              <h1>GORILLA</h1>
+                              <h1>BLOCK BUSTER</h1>
+                              <h1>BOLSTER</h1>
+                              <h3>Watch the demo video</h3>
+                              <div class="linkproduct1">
+                              <a href="" style="background-color: white;color: black; text-decoration: none;   padding: 14px 25px; ">View The Product</a>
+                          </div>
+                          </div>
+                        </div>
+                        </div>
+                  </div>
+                  <div class="content3" style="background-image: url(https://storage.googleapis.com/roughneck-tools/images/yellow-grunge.2e16d0ba.fill-1920x1080.jpg?Expires=1665698474&GoogleAccessId=roughneck-tools%40olympia-tools.iam.gserviceaccount.com&Signature=NAHW700iVqDT5roKPWqVR%2F4h7D7%2FAC9de8ccLf0GMH9pKiGFys0zGL2oXl2CuvKPvqYJ8GlMe8R9eqKQR%2Ffs2CJ1BXjHYK9eUBH0cC3PoZp6YYRY4Dw6ZeMd68Wdkkvfy94xLjl9yq0MrNgSHy18pVXci1sUPemvQZRnIUG4fuCRhAcsY0JRoOwDdr978fHOuOn%2BAmNNWGlUYIMeW5Ciuo984MGpw463toYxmaAHDAIrUkrBxULg291NRDSEcLFt%2FBKDfM7aNEYF5NXYo0AY2Fr%2BCkUtfTdNFzYXGXlw1AEug%2FgthM8hGA2FI%2FQxf%2B7r0o1p7dbdG7UgKzjiWXDAKQ%3D%3D); background-size: 100%; height: 700px;">
+                    
+                <div style="text-align: center">FOLLOW US</div>
+                <div class="followus1">
+                    <div class="sosialmedia">
+                      <a href="https://web.facebook.com/roughneck.tough.world.tough.tools?_rdc=1&_rdr" target="_blank">
+                        <img src="fb.svg" alt="Northern Lights" width="600" height="400">
+                      </a>
+                      <div class="desc" style="text-align:center ;"></div>
+                    </div>
+                  </div>
+                  <div class="followus2">
+                    <div class="sosialmedia">
+                      <a href="https://www.instagram.com/roughneck_tools/" target="_blank">
+                        <img src="instagram.svg" alt="Northern Lights" width="600" height="400">
+                      </a>
+                      <div class="desc" style="text-align:center ;"></div>
+                    </div>
+                    
+                  </div>
+                  <div class="followus3">
+                    <div class="sosialmedia">
+                      <a href="https://www.youtube.com/channel/UChmmNNDntGCaOnaQASgWPCw" target="_blank">
+                        <img src="youtube.svg" alt="Northern Lights" width="600" height="400">
+                      </a>
+                      <div class="desc" style="text-align:center ;"></div>
+                    </div>                
+                          
+                        </div>
+                        <div style="text-align: center; padding-top:550px; font-weight: bold;">
+                          <h2>Connect with us on our social media channels for more information <br>
+                            on new and existing products, get involved in conversation, have your say</h2>
+                        </div>
+                        </div>
+                       
+                  </div>
+                  <div class="content2" style="background-image: url(Roughneck_StrikeDemo_Concrete_RG.2e16d0ba.fill-1920x1080.jpg); background-size: 100%; height: 1100px;">
+               
+                    <div class="row">
+                        <div class="sekop1">
+                          <img src="https://storage.googleapis.com/roughneck-tools/images/adjustable-gorilla-bar.2e16d0ba.fill-650x1080.png?Expires=1665667969&GoogleAccessId=roughneck-tools%40olympia-tools.iam.gserviceaccount.com&Signature=FYv85bOJQSpN5JG6p%2BMm4nvuHyT%2FLj2MYmzT%2BpPY6zaaX4A8uQOcM0fcOh2GnjQTztB176jn4IswAm8jfJJcwKxWx6nGN6OohLLG%2BMqqsyeE555biWQXuq12IRwF3HeRmUK%2BWPrj8koVtXUI%2BnBI8LC35brrlAoXjYwT2h0cD%2BIpVvGQi5psoLnMKTiMGx6RkUV%2FTtLAi48iBGKV4cApWebLb7qRREvCwiXAOYBejDiXXdqSrWZ4hQSi5LxkvwzecdRux4C3GuI%2FPu%2FwfK3PV%2Bui%2BPQq%2FXSUc25q3q5CK%2FBa25hzEZmexqT84%2FuG5HpQvMYaZryfR6eQB1L4776mGg%3D%3D"width="600px" style="float: right;"   alt="">
+                          
+                        </div>
+                        <div class="productinovation">
+                         
+                          <div class="desproductinovation2">
+                              <h1>PRODUCT</h1>
+                              <h1>INNOVATION</h1>
+                              <h3>Innovation is at the very core of Roughneck®. We work closely with end users to develop high quality tools to solve every day problems. Designing products to help trade professionals to work smarter, faster and safer.</h3>
+                             
+                          </div>
+                        </div>
+                        </div>
+                  </div>
+                  <div class="content3" style="background-image: url(https://storage.googleapis.com/roughneck-tools/images/12345-grey-grunge.2e16d0ba.fill-1920x1080.jpg?Expires=1665698473&GoogleAccessId=roughneck-tools%40olympia-tools.iam.gserviceaccount.com&Signature=ATSSPMKDUn24A9qv0C%2Bwt9aju%2F5vbGfOpsAPl6jgWKzUBvccSLsIljUh1ZqU6JY72opAATYg9BnzWovzOpPNa28yZFzi%2BKpUYxsJopTj2MJiplV9Z5DRHGI%2F3Y3h8Y3XkBDvhHeqEYpaIEmwd9F3i9IKBKaEVzgAIDBxqtspathbtfYYy6zP%2BDhT5kk3KugFVN27EkAATmUNY4KEHNhDotyriai45PVZKYkzM%2FKdqhbWvEHAzjHVlgzzuAm8R5Yghx%2B5ukJTY1hteHdsWMzpkRvg7BOyYl0IvCg15vweSYmZ9X7TUow8s%2B3BGwSis6aWX2b%2BNZb3ivbkNIy%2Bupytzw%3D%3D); background-size: 100%; height: 700px;">
+                    
+                    <div class="row">
+                     
+                        <div class="followus1">
+                          <div class="sosialmedia">
+                            <a target="_blank" href="img_lights.jpg">
+                              <img src="https://storage.googleapis.com/roughneck-tools/images/TB-1027-Article-Graphic-V2.width-1080.jpg?Expires=1665698474&GoogleAccessId=roughneck-tools%40olympia-tools.iam.gserviceaccount.com&Signature=P9UwbqYRg637CiAkJlgSiKVXb9EXGUFQHe%2FvOKdgfQnSK%2B4LE1D67BHudHjK9l690gQzMD1sdHCt9Q8NLzCaXeahQe%2B4dI4FxiBLiqNVDxEHaj%2FWTi7J9EFb7KqhxzjzCwVIuuFSPBm3wPmPFhJ7%2FeNk4E12zZbyI%2FhHWP5WOKZ40pv5MAuWpPnCEX5Xj5wnlg307acBYgCsfqG4inHVMNCLiMpk9hWFyEfqvnAjChmWkJGs%2BpT39e9qzw%2F5BU%2FTgl%2FZ7YIP%2BE5JWCTextebMCJDkfw0f9Ka37HzWTScwojD1yP8qUGMh4x%2FFLri%2FgL4SKP5h%2Bpvebotgj0tlbv%2B%2BQ%3D%3D" alt="Northern Lights" width="700" height="400">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="followus2">
+                          <div class="sosialmedia">
+                            <a target="_blank" href="img_lights.jpg">
+                              <img src="https://storage.googleapis.com/roughneck-tools/images/news-prunning-saws.width-767.jpg?Expires=1665698474&GoogleAccessId=roughneck-tools%40olympia-tools.iam.gserviceaccount.com&Signature=jz2BqtRtZqfFf2PYIiKoZgBy1aSSKYjFmu87x6mQDTAjtSctfVufANTGTcXYLXd2nOe4i0%2B%2B3cw9uiQqN3cLaUojhDe6qjRAM%2BI5aU2JUQFfTMdtOrHrKFk4HPs3XviIcyBBcfdxd9n6PbqOmJnkNUYvd3iOeW%2BUXyIfL93w6B1kMljN4OTP6kREmnVRBIYcf%2Ff042DTntkLVM37affjqYeLmWZR0Fgdb3tY8y9PMKxlKn7FQIvI3iWJZHrOckXWshzZuC8ttNGhgO9I9BuaRWKdR9PPDVcZISBPWNoAPiYVAb1T7dzAW3ZUy4BqlWnM3A6ZPidbeTdbMrk6WC4ByA%3D%3D" alt="Northern Lights" width="600" height="400">
+                            </a>
+                          </div>
+                          
+                        </div>
+                        <div class="followus3">
+                          <div class="sosialmedia">
+                            <a target="_blank" href="img_lights.jpg">
+                              <img src="https://storage.googleapis.com/roughneck-tools/images/9503-BIG-Open_frame_fib.width-1080.jpg?Expires=1665698474&GoogleAccessId=roughneck-tools%40olympia-tools.iam.gserviceaccount.com&Signature=X3%2FXWUnQGz3wZOOAvtxcb3ScAjDdB3LYUggH1VZqKyXqx8aA61XupJrA7rcHBCikk1AySzmGvZ3dn%2FlCAXrRXFchEKkEnoZfMZPwihUUViJf6Fooohi5njde76%2B8KsxdS3JMRcFUnto%2B15wUhs3t4MgSqBRH6i8oHL7iCCklbLn4%2FsmSVi9o7m%2FZd5wYrtcfXDEW3kXl7jtZXG02DuDMI4a5kK97kC9SN7kD2QZ%2F07U17QzQsgzmhi%2FwjhCc3dV4ZrGW6KVuHdaAuw597eZqT8kCQMkK%2FlrDh79%2BNbsJmJjxIn48ACzSOOUKbuMJZ%2Fc4rzOVrYSXdMIEvvUwElzgNg%3D%3D" alt="Northern Lights" width="600" height="400">
+                            </a>
+                          </div>
+                          
+                        </div>
+                        <div style="text-align: center; padding-top:550px; font-weight: bold;">
+                          <h2>All the latest Roughneck news and product releases.</h2>
+                        </div>
+                        </div>
+                       
+                  </div>
+                  <!-- <div class="foter" style="background-color: black;">
+                      <div class="row" >
+                        <div class="f">
+                        <ol>Product Categories
+                          <li>Striking and Demolition TOols</li>
+                          <li>Lanscaping and contractior tools</li>
+                          <li>Building Tools</li>
+                          <li>Woodworking adn cutting Tools</li>
+                        </ol>
+                        </div>
+                      </div>
+                  </div> -->
+                  <div class="footer">
+                    <div class="contain">
+                    <div class="col">
+                      <img src="https://roughneck-tools.com/static/images/temp/white-logo.svg" width="200px" alt="">
+                      <h1>Product Categories</h1>
+                      <ul>
+                        <li>Striking And Demolition Tools</li>
+                        <li>LanscapingAdn contractior tools</li>
+                        <li>builing tools</li>
+                        <li>woodworiking and cutting tools</li>
+                       
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <h1>Featured Products</h1>
+                      <ul>
+                        <li>New Sovet range</li>
+                        <li>Gorilla Bars</li>
+                        <li>Gorrila Block Buster Bloster</li>
+                        <li>Gorilla Sledge Hammers</li>
+                        
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <h1>How Can We Help</h1>
+                      <ul>
+                        <li>Contact Us</li>
+                        <li>Privacy Policy</li>
+                        <li>Copyright Notice</li>
+                        <li>Modern Slavery statment</li>
+                        <li>Corporate Website</li>
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <h1>Follow Us</h1>
+                      <ul>
+                        <li>Webmail</li>
+                        <li>Redeem code</li>
+                        <li>WHOIS lookup</li>
+                        <li>Site map</li>
+                        <li>Web templates</li>
+                        <li>Email templates</li>
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <h1>Support</h1>
+                      <ul>
+                        <li>Contact us</li>
+                        <li>Web chat</li>
+                        <li>Open ticket</li>
+                      </ul>
+                    </div>
+                    <div class="col social">
+                      <h1>Social</h1>
+                      <ul>
+                        <li><img src="https://svgshare.com/i/5fq.svg" width="32" style="width: 32px;"></li>
+                        <li><img src="https://svgshare.com/i/5eA.svg" width="32" style="width: 32px;"></li>
+                        <li><img src="https://svgshare.com/i/5f_.svg" width="32" style="width: 32px;"></li>
+                      </ul>
+                    </div>
+                  <div class="clearfix"></div>
+                  </div>
+                  </div>
+</body>
+</html>
