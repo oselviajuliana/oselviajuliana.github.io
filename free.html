@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>quality</title>
+</head>
+<style>
+* {
+  box-sizing: border-box;
+}
+  body {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 20px;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 50px;
+}
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(255, 157, 0);
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.logo{
+    margin-left: 250px;
+}
+.column1 {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+.column2 {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+.column3 {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+.column4 {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+div.desc {
+  padding: 15px;
+  text-align: left;
+  padding-left: 100px;
+  font-size: bold;
+}
+div.desc1, .desc3 {
+  text-align: right;
+ padding-right: 100px;
+  margin-top: 220px;
+  font-size: bold;
+
+}
+.content1{
+  
+    width: 100%;
+}
+
+.sekop1 {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+.sekop2 {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+.content2{
+  
+  width: 100%;
+}
+.desccontent2{
+  padding: 0;
+  font-size: large;
+  padding-top: 100px;
+}
+.linkproduct1 a:hover{
+  background-color: yellow;
+}
+.footer {
+  width: 100%;
+  position: relative;
+  height: auto;
+  background-color: #000000;
+}
+.footer .col {
+  width: 190px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px 20px 20px 20px;
+  margin-top: 50px;
+}
+.footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color: rgba(255,255,255,0.2);
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.250em;
+  margin-top: 50px;
+}
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer .col ul li {
+  color: #999999;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+.social ul li {
+  display: inline-block;
+  padding-right: 5px !important;
+}
+
+.footer .col ul li:hover {
+  color: #ffffff;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+.clearfix {
+  clear: both;
+}
+@media only screen and (min-width: 1280px) {
+  .contain {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1139px) {
+  .contain .social {
+    width: 1000px;
+    display: block;
+  }
+  .social h1 {
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .footer .col {
+    width: 33%;
+  }
+  .footer .col h1 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 500px) {
+    .footer .col {
+      width: 50%;
+    }
+    .footer .col h1 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+}
+.followus1 {
+  float: right;
+  width: 33.33%;
+  padding: 15px;
+}
+.followus2 {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+.followus3 {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+div.sosialmedia {
+  width:  450px;
+  height: 300px;
+  margin: 0;
+  float: left
+}
+
+
+div.sosialmedia img {
+  width: 250px;
+  margin-left: 150px;
+  margin-top: 50px;
+}
+.content3{
+  width: 100%;
+}
+.desproductinovation2{
+  color: white;
+  padding: 0;
+  font-size: large;
+  padding-top: 400px;
+}
+</style>
+<body>
+    
+<nav>
+            <ul>
+                <li class="logo"><img src="https://roughneck-tools.com/static/images/logo_white.svg" width="100%" alt=""></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">PRODUCTS</a>
+                    <div class="dropdown-content">
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                  </li>
+                <li><a href="">INOVATION</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">ROUGH GUIDES</a>
+                    <div class="dropdown-content">
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#" class="dropbtn">SUPPORT</a>
+                    <div class="dropdown-content">
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#" class="dropbtn">ABOUT US</a>
+                    <div class="dropdown-content">
+                      <a href="#">About Us</a>
+                      <a href="#">News</a>
+                    </div>
+                  </li>
+                  <li><i class="fa fa-search"></i></li>
+              </ul>
+            </nav>
+            
+            <div class="content2" style="background-image: url(12345-grey-grunge.2e16d0ba.fill-1920x1080.jpg); background-size: 100%; height: 1100px;">
+               
+                <div class="row">
+                    <div class="sekop1">
+                      <img src="roughneck-quality-hero.2e16d0ba.fill-650x1080.png"width="600px" style="float: right;"   alt="">
+                      
+                    </div>
+                    <div class="sekop2">
+                        <h1 style="padding-top: 50px;">QUALITY
+                            ASSURED</h1>
+                      <div class="desccontent2">
+                          <h3>
+                            Product quality is at the heart of everything we do. <br>
+                             Our commitment to quality starts with the factory <br>
+                              and extends throughout our supply chain. <br>
+                               ROUGHNECK® products are manufactured in <br>
+                                accordance with relevant British and European <br>
+                                 standards.
+
+We are committed to fair, ethical and sustainable <br>
+ working practices. As a proud SEDEX member we <br>
+  ensure that our operations are carried out in a way <br>
+   that protects human rights and safeguards workers, <br>
+    promoting social change. We actively pursue <br>
+     sustainable and responsible practises that protect <br>
+      the environment. Continuous auditing and <br>
+       improvement processes guarantee our high <br>
+        standards are maintained without compromise.
+
+
+                          </h3>
+                          <div class="linkproduct1">
+                      </div>
+                      </div>
+                    </div>
+                    </div>
+              </div>
+                  <div class="footer">
+                    <div class="contain">
+                    <div class="col">
+                      <img src="https://roughneck-tools.com/static/images/temp/white-logo.svg" width="200px" alt="">
+                      <h1>Product Categories</h1>
+                      <ul>
+                        <li>Striking And Demolition Tools</li>
+                        <li>LanscapingAdn contractior tools</li>
+                        <li>builing tools</li>
+                        <li>woodworiking and cutting tools</li>
+                       
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <h1>Featured Products</h1>
+                      <ul>
+                        <li>New Sovet range</li>
+                        <li>Gorilla Bars</li>
+                        <li>Gorrila Block Buster Bloster</li>
+                        <li>Gorilla Sledge Hammers</li>
+                        
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <h1>How Can We Help</h1>
+                      <ul>
+                        <li>Contact Us</li>
+                        <li>Privacy Policy</li>
+                        <li>Copyright Notice</li>
+                        <li>Modern Slavery statment</li>
+                        <li>Corporate Website</li>
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <h1>Follow Us</h1>
+                      <ul>
+                        <li>Webmail</li>
+                        <li>Redeem code</li>
+                        <li>WHOIS lookup</li>
+                        <li>Site map</li>
+                        <li>Web templates</li>
+                        <li>Email templates</li>
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <h1>Support</h1>
+                      <ul>
+                        <li>Contact us</li>
+                        <li>Web chat</li>
+                        <li>Open ticket</li>
+                      </ul>
+                    </div>
+                    <div class="col social">
+                      <h1>Social</h1>
+                      <ul>
+                        <li><img src="https://svgshare.com/i/5fq.svg" width="32" style="width: 32px;"></li>
+                        <li><img src="https://svgshare.com/i/5eA.svg" width="32" style="width: 32px;"></li>
+                        <li><img src="https://svgshare.com/i/5f_.svg" width="32" style="width: 32px;"></li>
+                      </ul>
+                    </div>
+                  <div class="clearfix"></div>
+                  </div>
+                  </div>
+</body>
+</html>
